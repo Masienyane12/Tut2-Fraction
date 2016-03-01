@@ -6,14 +6,15 @@ class Fraction
 
 public:
 	Fraction();                        //constructor
-	~Fraction();                       //destructor
-	void getNumDenom(int,int,int,int)                // get denominator and numerator   function
-	void setNumDenom(int,int,int,int )            //  
+	
+	void getNumDenom();             // get denominator and numerator   function
+		void setNumDenom();          //  
 
-		void add();                  
-	void subtract();
-	void multiply();
-	void divide();   
+		void add(Fraction, Fraction);
+
+		void subtract(Fraction, Fraction);
+		void multiply(Fraction, Fraction);
+		void divide(Fraction, Fraction);
 
 private :
 	int numer;
